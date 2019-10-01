@@ -50,7 +50,7 @@ public class Snack
         this.cost = cost;
     }
 
-    public Double getCost()
+    public double getCost()
     {
         return cost;
     }
@@ -71,9 +71,9 @@ public class Snack
 	}
 
 	// other methods
-	public void setQuantity(double quantity)
+	public double setQuantity(double quantity)
 	{	
-		this.quantity = quantity;
+		return this.quantity = quantity;
 	}
 
 	public double buySnack(double quantity)

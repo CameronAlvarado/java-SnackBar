@@ -21,12 +21,12 @@ public class Customer
 	}
 
 	// methods - getters and setters
-	public void setCash(Double cash)
+	public double setCash(Double cash)
 	{
-		this.cashOnHand = cash;
+		return cashOnHand = cash;
 	}
 
-	public Double buy(Double cash)
+	public double buy(Double cash)
 	{
 		setCash(this.cashOnHand - cash);
 		return cashOnHand;
@@ -42,7 +42,7 @@ public class Customer
 		this.name = name;
 	}
 
-	public Double getCash()
+	public double getCash()
 	{
 		return cashOnHand;
 	}

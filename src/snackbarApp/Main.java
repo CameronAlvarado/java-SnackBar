@@ -39,8 +39,22 @@ public class Main
                 System.out.println("3. " + cus2.getCash());
                 System.out.println("3. " + snk4.getQuantity());
 
-                // double proc4;
-                // proc4 = cus1.setCash(10.0);
-                // System.out.println("4. " + cus2.getCash());
+                double proc4;
+                proc4 = cus1.setCash(cus1.getCash() + 10.0);
+                System.out.println("4. " + cus1.getCash());
+
+                double proc5;
+                proc5 = cus1.buy(snk2.buySnack(1));
+                System.out.println("5. " + cus1.getCash());
+                System.out.println("5. " + snk2.getQuantity());
+
+                double proc6;
+                proc6 = snk3.setQuantity(snk3.getQuantity() + 12);
+                System.out.println("6. " + snk3.getQuantity());
+
+                double proc7;
+                proc7 = cus2.buy(snk3.buySnack(3));
+                System.out.println("5. " + cus2.getCash());
+                System.out.println("5. " + snk3.getQuantity());
 	}
 }
